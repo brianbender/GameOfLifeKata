@@ -20,15 +20,13 @@ namespace GameOfLife
         public string GetNextGeneration()
         {
             var result = string.Empty;
-            if (_rows == 1 && _columns == 1)
-                return ".";
 
             for (var rowNum = 0; rowNum < _rows; rowNum++)
             {
                 for (var colNum = 0; colNum < _columns; colNum++)
                 {
                     var cell = _cells.First(c => c.IsLocation(rowNum, colNum));
-                    result += cell.GetState();
+                    result += cell.GetState(GetAliveNeighborCount(rowNum, colNum));
                 }
                 result += '\n';
             }
@@ -36,6 +34,12 @@ namespace GameOfLife
             result = result.Trim('\n');
 
             return result;
+        }
+
+        private int GetAliveNeighborCount(int rowNum, int colNum)
+        {
+            return 0;
+
         }
 
         private void AddCell(int rowNum, int colNum, char contents)
@@ -70,14 +74,21 @@ namespace GameOfLife
             _contents = contents;
         }
 
-        public char GetState()
+        public char GetState(int neighborCount)
         {
-            return '.';
+            if(neighborCount == 3)
+                return LiveCell;
+
+
+            return DeadCell;
         }
 
         public bool IsLocation(int rowNum, int colNum)
         {
             return _row == rowNum && _col == colNum;
         }
+
+        public const char DeadCell = '.';
+        public const char LiveCell = '*';
     }
 }
