@@ -1,15 +1,15 @@
 # GameOfLifeKata
 
-About this Kata
+##About this Kata
 This was presented as a PreparedKata at XP2005, by Emmanuel Gaillot.
 
-Difficulty - medium
+##Difficulty - medium
 
 http://codingdojo.org/cgi-bin/index.pl?KataGameOfLife
 
 Similar Katas - KataMinesweeper, KataReversi
 
-Problem Description
+##Problem Description
 
 This Kata is about calculating the next generation of Conway's game of life, given any starting position. See http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life for background.
 
@@ -21,7 +21,7 @@ You start with a two dimensional grid of cells, where each cell is either alive 
    4. Any dead cell with exactly three live neighbours becomes a live cell.
 You should write a program that can accept an arbitrary grid of cells, and will output a similar grid showing the next generation.
 
-Clues
+##Clues
 
 The input starting position could be a text file that looks like this:
 
@@ -41,4 +41,6 @@ Generation 2:
 ........
 The input format is similar to that in KataMinesweeper, and is easily parsed in most languages.
 
-Suggested Test Cases Make sure you have enough coverage of edge cases - where there are births and deaths at the edge of the grid.
+##Suggested Test Cases 
+
+Make sure you have enough coverage of edge cases - where there are births and deaths at the edge of the grid.
