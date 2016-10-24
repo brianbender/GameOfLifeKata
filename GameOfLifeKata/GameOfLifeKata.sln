@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLifeKata", "GameOfLifeKata\GameOfLifeKata.csproj", "{3D1953B1-DEA0-4474-AB29-FE1025DCA0C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife", "GameOfLife\GameOfLife.csproj", "{26DB3DC0-D11B-479C-98F2-170EC202A6E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLifeTests", "GameOfLifeTests\GameOfLifeTests.csproj", "{F2A6C2F7-02B4-4E61-9A2D-43C93071E5E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3D1953B1-DEA0-4474-AB29-FE1025DCA0C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D1953B1-DEA0-4474-AB29-FE1025DCA0C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D1953B1-DEA0-4474-AB29-FE1025DCA0C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D1953B1-DEA0-4474-AB29-FE1025DCA0C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26DB3DC0-D11B-479C-98F2-170EC202A6E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DB3DC0-D11B-479C-98F2-170EC202A6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DB3DC0-D11B-479C-98F2-170EC202A6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DB3DC0-D11B-479C-98F2-170EC202A6E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A6C2F7-02B4-4E61-9A2D-43C93071E5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A6C2F7-02B4-4E61-9A2D-43C93071E5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A6C2F7-02B4-4E61-9A2D-43C93071E5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A6C2F7-02B4-4E61-9A2D-43C93071E5E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
